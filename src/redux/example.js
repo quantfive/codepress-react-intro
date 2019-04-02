@@ -12,6 +12,12 @@ const AuthConstants = {
 }
 
 export const ExampleActions = {
+  asyncThunkAction: () => {
+    return dispatch => {
+      return fetch()
+      .then()
+    }
+  },
   login: () => {
     return dispatch({
       type: AuthConstants.LOGIN,
