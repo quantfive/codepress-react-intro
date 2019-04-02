@@ -8,17 +8,15 @@
  **********************************/
 
 const AuthConstants = {
-  LOGIN: 'LOGIN',
+  LOGIN: '@@auth/LOGIN',
 }
 
 export const ExampleActions = {
   login: () => {
-    return dispatch => {
-      dispatch({
-        type: AuthConstants.LOGIN,
-        isLoggedIn: true,
-      })
-    }
+    return dispatch({
+      type: AuthConstants.LOGIN,
+      isLoggedIn: true,
+    })
   },
 }
 
